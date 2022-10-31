@@ -1,0 +1,30 @@
+import React from 'react';
+import Pokecard from '../Pokecard';
+import './index.css';
+const Pokedex = (props) => {
+	let title;
+	if (props.isWinner) {
+		title = <h1 className="Pokedex-winner">Winning Hand</h1>;
+	} else {
+		title = <h1 className="Pokedex-loser">Losing Hand</h1>;
+	}
+
+	return (
+		<div className="Pokedex">
+			<h2>{title}</h2>
+			<h4>Total Experience {props.exp}</h4>
+			<div className="Pokedex-cards">
+				{props.pokemons.map((p) => (
+					<Pokecard
+						id={p.id}
+						name={p.name}
+						type={p.type}
+						exp={p.base_exprience}
+					/>
+				))}
+			</div>
+		</div>
+	);
+};
+
+export default Pokedex;
