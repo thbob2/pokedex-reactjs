@@ -13,7 +13,7 @@ const Pokecard = (props) => {
 		<div>
 			<div className="Pokecard">
 				<h1 className="Pokecard-title">{props.name}</h1>
-				<div className="Pokecar-image">
+				<div className="Pokecard-image">
 					<img src="{pokeImage}" alt="{props.name}" />
 				</div>
 				<div className="Pokecard-data">Type: {props.type}</div>
