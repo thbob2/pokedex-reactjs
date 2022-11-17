@@ -19,7 +19,7 @@ const Pokedex = (props) => {
 						id={p.id}
 						name={p.name}
 						type={p.type}
-						exp={p.base_exprience}
+						exp={p.base_experience}
 					/>
 				))}
 			</div>
