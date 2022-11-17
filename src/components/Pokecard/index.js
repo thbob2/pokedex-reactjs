@@ -14,7 +14,7 @@ const Pokecard = (props) => {
 			<div className="Pokecard">
 				<h1 className="Pokecard-title">{props.name}</h1>
 				<div className="Pokecard-image">
-					<img src="{pokeImage}" alt="{props.name}" />
+					<img src={pokeImage} alt="{props.name}" />
 				</div>
 				<div className="Pokecard-data">Type: {props.type}</div>
 				<div className="Pokecard-data">EXP: {props.exp}</div>
